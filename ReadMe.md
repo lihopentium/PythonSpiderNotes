@@ -1,6 +1,7 @@
 # [Python入门网络爬虫之精华版](https://github.com/lining0806/PythonSpiderNotes)
 
-*** 
+v0.1
+***
 
 Python学习网络爬虫主要分3个大的版块：**抓取**，**分析**，**存储**  
 
@@ -92,8 +93,8 @@ Urllib2：data为string
 
 ```
 import requests			
-requests_session = requests.session() 
-response = requests_session.post(url=url_login, data=data) 
+requests_session = requests.session()
+response = requests_session.post(url=url_login, data=data)
 ```
 
 若存在验证码，此时采用response = requests_session.post(url=url_login, data=data)是不行的，做法应该如下：  
@@ -109,9 +110,9 @@ response3 = requests_session.get(url_results) # 已登陆，因为之前拿到�
 
 参考项目：[网络爬虫之用户名密码及验证码登陆：爬取知乎网站](https://github.com/lining0806/PythonSpiderNotes/blob/master/ZhihuSpider)  
 
-### 3. 对于反爬虫机制的处理 
+### 3. 对于反爬虫机制的处理
 
-**3.1 使用代理** 
+**3.1 使用代理**
 
 适用情况：限制IP地址情况，也可解决由于“频繁点击”而需要输入验证码登陆的情况。  
 
@@ -130,9 +131,9 @@ Urllib2：
 	response = urllib2.urlopen(url)
 ```
 
-**3.2 时间设置** 
+**3.2 时间设置**
 
-适用情况：限制频率情况。 
+适用情况：限制频率情况。
 
 Requests，Urllib2都可以使用time库的sleep()函数：
 
@@ -210,7 +211,7 @@ Selenium是一款自动化测试工具。它能实现操纵浏览器，包括字
 
 这里列出在给定城市列表后，使用selenium来动态抓取[去哪儿网](http://flight.qunar.com/)的票价信息的代码。
 
-参考项目：[网络爬虫之Selenium使用代理登陆：爬取去哪儿网站](https://github.com/lining0806/PythonSpiderNotes/blob/master/QunarSpider) 
+参考项目：[网络爬虫之Selenium使用代理登陆：爬取去哪儿网站](https://github.com/lining0806/PythonSpiderNotes/blob/master/QunarSpider)
 
 ### 8. 验证码识别  
 

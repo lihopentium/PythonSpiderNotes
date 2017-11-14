@@ -1,6 +1,6 @@
 # [Python入门网络爬虫之精华版](https://github.com/lining0806/PythonSpiderNotes)
 
-v0.1
+v0.2
 ***
 
 Python学习网络爬虫主要分3个大的版块：**抓取**，**分析**，**存储**  
